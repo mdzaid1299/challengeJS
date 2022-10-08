@@ -1,4 +1,4 @@
-let firstName = "";
+let firstName = "james";
 let lastName = "Smith";
 let age = 78;
 let isMarried = true;
