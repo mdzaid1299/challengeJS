@@ -120,6 +120,7 @@ function displayOrderDetails(
 
 // call the functions to compute order amount and display order details
 displayCustomerDetails(customerName,customerEmail,phoneNo,address);
+
 displayMenu();
 let pizzaPrice1 = getPriceOfPizzaBasedOnSize(3);
 let totalPizzaPrice = calculatePizzaPrice(noOfPizzasOrdered,pizzaPrice1);
