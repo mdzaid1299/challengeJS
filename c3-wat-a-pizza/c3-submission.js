@@ -23,7 +23,7 @@ let beveragePrice = 1.99;
 
 // define function displayCustomerDetails() to display the details of customer passed as parameters.
 function displayCustomerDetails(name, email, phoneNo, address) {
-  console.log("Name of the cutomer is       : " + name);
+  console.log("Name of the customer is       : " + name);
   console.log("Email of the customer is     :" + email);
   console.log("Contact No of the customer is: " + phoneNo);
   console.log("Address of the customer is   :" + address);
@@ -122,10 +122,10 @@ function displayOrderDetails(
 displayCustomerDetails(customerName,customerEmail,phoneNo,address);
 
 displayMenu();
-let pizzaPrice1 = getPriceOfPizzaBasedOnSize(3);
-let totalPizzaPrice = calculatePizzaPrice(noOfPizzasOrdered,pizzaPrice1);
+let pizzaPriceTemp = getPriceOfPizzaBasedOnSize(3);
+let totalPizzaPrice = calculatePizzaPrice(noOfPizzasOrdered,pizzaPriceTemp);
 let totalBeveragePrice = calculateBeveragesPrice(noOfBeveragesOrdered,getPriceOfBeverage());
 let totalGarlicPrice = calculateGarlicPrice(noOfGarlicBreadOrdered,getPriceOfGarlicBread());
-let totalPrice1 = totalPizzaPrice + totalBeveragePrice + totalGarlicPrice;
-let totalBillAmountAfterDiscount1 = calculateDiscountAndReturnBillAmount(totalPrice1);
-displayOrderDetails(noOfPizzasOrdered,noOfGarlicBreadOrdered,noOfBeveragesOrdered,totalPrice1,totalBillAmountAfterDiscount1);
+let totalPriceFin = totalPizzaPrice + totalBeveragePrice + totalGarlicPrice;
+let totalBillAmountAfterDiscountFin = calculateDiscountAndReturnBillAmount(totalPriceFin);
+displayOrderDetails(noOfPizzasOrdered,noOfGarlicBreadOrdered,noOfBeveragesOrdered,totalPrice1,totalBillAmountAfterDiscountFin);
